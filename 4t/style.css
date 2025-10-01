@@ -1,0 +1,39 @@
+/* portfolio-styles.css - custom styles + media queries */
+
+/* base */
+body { font-family: Arial, sans-serif; margin: 0; background: #fff8fb; color: #222; }
+h2 { font-size: 20px; }
+
+/* Make card images fit nicely */
+.card-img-top { object-fit: cover; height: 180px; }
+
+/* Minor spacing */
+main { padding-bottom: 40px; }
+
+/* Media queries - adjust font size and spacing for small screens */
+
+/* Small devices (mobile) - default mobile-first */
+.card .card-title { font-size: 16px; }
+.card .card-text { font-size: 14px; }
+
+/* Tablet */
+@media (min-width: 600px) {
+  h2 { font-size: 22px; }
+  .card .card-title { font-size: 17px; }
+  .card .card-text { font-size: 15px; }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  h2 { font-size: 26px; }
+  .card .card-title { font-size: 18px; }
+  .card .card-text { font-size: 16px; }
+  .card-img-top { height: 220px; }
+}
+
+/* Visibility example already used in HTML:
+   .d-none .d-md-block classes from Bootstrap hide element on small screens.
+*/
+
+/* Small UX improvement: keep sidebar cards visually distinct */
+aside .card { box-shadow: 0 2px 8px rgba(0,0,0,0.06); }

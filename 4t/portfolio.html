@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Task 4 - Responsive Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header with Bootstrap navbar (requirement #1) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Cat Café Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#nav2" aria-controls="nav2" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav2">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Our Cats</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main using Bootstrap grid: left projects, right sidebar -->
+  <main class="container my-4">
+    <div class="row">
+      <!-- Left side: projects (use 8 columns on large, 12 on small) -->
+      <section class="col-12 col-lg-8">
+        <h2 class="mb-3">Projects</h2>
+
+        <div class="row g-3">
+          <!-- each project card uses bootstrap columns; on lg show 2 per row (col-md-6) -->
+          <article class="col-12 col-md-6">
+            <div class="card h-100">
+              <img src="https://via.placeholder.com/600x360?text=Project+1" class="card-img-top" alt="Project1">
+              <div class="card-body">
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">Short description for project 1.</p>
+                <a class="btn btn-primary" href="#">View</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6">
+            <div class="card h-100">
+              <img src="https://via.placeholder.com/600x360?text=Project+2" class="card-img-top" alt="Project2">
+              <div class="card-body">
+                <h5 class="card-title">Project 2</h5>
+                <p class="card-text">Short description for project 2.</p>
+                <a class="btn btn-primary" href="#">View</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6">
+            <div class="card h-100">
+              <img src="https://via.placeholder.com/600x360?text=Project+3" class="card-img-top" alt="Project3">
+              <div class="card-body">
+                <h5 class="card-title">Project 3</h5>
+                <p class="card-text">Short description for project 3.</p>
+                <a class="btn btn-primary" href="#">View</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6">
+            <div class="card h-100">
+              <img src="https://via.placeholder.com/600x360?text=Project+4" class="card-img-top" alt="Project4">
+              <div class="card-body">
+                <h5 class="card-title">Project 4</h5>
+                <p class="card-text">Short description for project 4.</p>
+                <a class="btn btn-primary" href="#">View</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Right side: sidebar (use 4 columns on large, full width below on small) -->
+      <aside class="col-12 col-lg-4">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h4>About Me</h4>
+            <p>Short bio: Student of Media Technologies. I build simple responsive sites.</p>
+            <h6>Contact</h6>
+            <p>Email: student@example.com</p>
+          </div>
+        </div>
+
+        <div class="card d-none d-md-block"> <!-- example: hide on small screens -->
+          <div class="card-body">
+            <h6>Extra Info (hidden on small)</h6>
+            <p>Some additional details visible on tablet+ and desktop only.</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-3">
+    <div class="container text-center">
+      <small>© 2025 Cat Café Portfolio — responsive demo</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
